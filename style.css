@@ -1,0 +1,90 @@
+.single-project-item{
+	background-image: url('assets/img/Screenshot_32.png');
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 15px;
+}
+.project-bg-1{background-image: url('assets/img/Screenshot_2.png');}
+.project-bg-2{background-image: url('assets/img/Screenshot_3.png');}
+.project-bg-3{background-image: url('assets/img/Screenshot_4.png');}
+.project-bg-4{background-image: url('assets/img/Screenshot_5.png');}
+.project-bg-5{background-image: url('assets/img/Screenshot_6.png');}
+.project-bg-6{background-image: url('assets/img/Screenshot_7.png');}
+.project-bg-7{background-image: url('assets/img/Screenshot_8.png');}
+.project-bg-8{background-image: url('assets/img/Screenshot_9.png');}
+
+ul.project-title {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+ul.project-title li {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.section-padding {
+    padding: 80px 0px;
+}
+
+.single-project-item a, .single-project-item span {
+    color: #01e9e3;
+}
+
+.col-md-4 {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.project-hover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    transition: .3s;
+}
+
+.project-hover:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background: #000;
+    z-index: -1;
+    opacity: .5;
+}
+
+.project-hover a {
+    position: absolute;
+    right: 22px;
+    top: 20px;
+    font-size: 18px;
+}
+
+.project-hover h4 {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.project-hover h4 span {
+    display: block;
+    font-size: 70%;
+    padding: 5px 0px;
+}
+
+.single-project-item:hover .project-hover {
+    opacity: 1;
+}
+
+.single-project-item.project-bg-1, .project-bg-3, .project-bg-5 {
+    height: 615px;
+}
